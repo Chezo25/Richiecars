@@ -8,7 +8,7 @@ const DefaultLayout = (props) => {
 
                 <h1>Richie Car Rentals</h1>
 
-                <button>user</button>
+                {/* <button>user</button> */}
             </div>
         </div>
         <div className="content">
