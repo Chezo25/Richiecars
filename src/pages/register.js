@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import DefaultLayout from "../components/DefaultLayout";
 
 const Register = () => {
   return (
-    <div>R</div>
-  )
-}
+    <DefaultLayout>
+      <h1>Register</h1>
+    </DefaultLayout>
+  );
+};
 
-export default Register
+export default Register;

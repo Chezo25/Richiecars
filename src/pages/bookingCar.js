@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import DefaultLayout from "../components/DefaultLayout";
 
 const bookingCar = () => {
   return (
-    <div>bookingCar</div>
-  )
-}
+    <DefaultLayout>
+      <h1>BookingCar</h1>
+    </DefaultLayout>
+  );
+};
 
-export default bookingCar
+export default bookingCar;
