@@ -4,7 +4,7 @@ import DefaultLayout from "../components/DefaultLayout";
 const home = () => {
   return (
     <DefaultLayout>
-      <h1>Home</h1>
+      <h1>Home Pg</h1>
     </DefaultLayout>
   );
 };
