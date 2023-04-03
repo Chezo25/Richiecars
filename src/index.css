@@ -3,6 +3,7 @@
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif !important;
+  background-color: azure;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -14,7 +15,7 @@ code {
 }
 
 .box {
-  background-color: white;
+  background-color: azure;
   box-shadow: 0px 0px 10px rgba(14, 30, 37, 0.32);
 }
 
