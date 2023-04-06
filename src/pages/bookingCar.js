@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import DefaultLayout from "../components/DefaultLayout";
+import { DatePicker } from 'antd';
 
 const bookingCar = () => {
   return (
-    <div>bookingCar</div>
-  )
-}
+    <DefaultLayout>
+      <h1>BookingCar</h1>
+      
+      <DatePicker/>
+    </DefaultLayout>
+  );
+};
 
-export default bookingCar
+export default bookingCar;

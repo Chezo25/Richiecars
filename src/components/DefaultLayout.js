@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from 'antd';
 
 const DefaultLayout = (props) => {
   return (
@@ -7,8 +8,9 @@ const DefaultLayout = (props) => {
             <div className="d-flex justify-content-between">
 
                 <h1>Richie Car Rentals</h1>
+                <Button type="primary">Button</Button>
 
-                <button>user</button>
+                
             </div>
         </div>
         <div className="content">
