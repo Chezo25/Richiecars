@@ -13,32 +13,32 @@ export const fetchCarsRequest = () => {
 };
 
 export const fetchCarsSuccess = (cars) => {
-  return {
-    type: FETCH_CARS_SUCCESS,
-    payload: cars,
-  };
+    return {
+        type: FETCH_CARS_SUCCESS,
+        payload: cars,
+    };
 };
 
 export const fetchCarsFailure = (error) => {
-  return {
-    type: FETCH_CARS_FAILURE,
-    payload: error,
-  };
+    return {
+        type: FETCH_CARS_FAILURE,
+        payload: error,
+    };
 };
 
 // Define async action creator
 export const fetchCars = () => {
-  return (dispatch) => {
-    dispatch(fetchCarsRequest());
-    axios
-      .get('/api/cars/getallcars') // replace with your API endpoint
-      .then((response) => {
-        const cars = response.data;
-        dispatch(fetchCarsSuccess(cars));
-      })
-      .catch((error) => {
-        const errorMsg = error.message;
-        dispatch(fetchCarsFailure(errorMsg));
-      });
-  };
+    return (dispatch) => {
+        dispatch(fetchCarsRequest());
+        axios
+            .get('/api/cars') // replace with your API endpoint
+            .then((response) => {
+                const cars = response.data;
+                dispatch(fetchCarsSuccess(cars));
+            })
+            .catch((error) => {
+                const errorMsg = error.message;
+                dispatch(fetchCarsFailure(errorMsg));
+            });
+    };
 };

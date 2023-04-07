@@ -3,8 +3,13 @@ import DefaultLayout from "../components/DefaultLayout";
 import { DatePicker } from 'antd';
 
 const bookingCar = () => {
-    return ( <
-        div > bookingCar < /div>
+    return ( 
+        <DefaultLayout>
+    <div> bookingCar</div>
+
+    <DatePicker/>
+    </DefaultLayout>
+        
     )
 }
 
