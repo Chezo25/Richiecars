@@ -25,3 +25,7 @@ h1 {
 .header {
     padding: 1px;
 }
+
+.content {
+    min-height: 90vh;
+}

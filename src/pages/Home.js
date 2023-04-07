@@ -28,6 +28,10 @@ dispatch(fetchCars())
               <p>{car.name}</p>
               <p>{car.rentPerday} Rent Per Day</p>
             </div>
+
+            <div>
+              <button>Pay here</button>
+            </div>
           </div>
           </Col>
         ))}
